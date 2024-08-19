@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>33worlds.net &gt; index</title>
+        <link rel="icon" href="img/swastika.png"/>
+        <link rel="stylesheet" href="temp33.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <div class="header">
+            <a href="/">33worlds.net</a> &gt;
+            <div class="dropdown-container">
+                <div class="dropdown-button">
+                    index ▾
+                </div>
+                <div class="dropdown-content">
+                    <a>empty for now...</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="contentbox">
+                <div class="contentheader">
+                    classes begin tomorrow!!!
+                    <span class="right-align">
+                        aug 19
+                    </span>
+                </div>
+                <div class="expandable-content" onclick="expandContent(this)">
+                    yesterday i was feeling feverish and it was just the absolute fucking worst. i'm all alone and i have no food, and i don't have anybody to care for me.
+                    it was such a hassle just to get food and i was so so depressed. but i'm all better now. i'm glad i knew how to take care of myself !!
+                    <div class="center">
+                        <img class="image-single image-blowupable" title="a screenshot from a cool horror game i found: forbidden siren" src="img/sirens stare.png" onclick="displayModal(this)"/>
+                    </div>  
+                    but it's not like i have a somebody in virginia, but i want a girlfriend again. i don't think i'm over the last one at all, but still. it would be nice to have a friend to tell me
+                    what to do and what to wear and to dress up and go out with. also i like being in the presence of a pretty woman.
+                    it makes me very happy.<br/>
+                    <br/>
+                    i want somebody to buy vivienne westwood for<br/>
+                    <img class="image-single image-blowupable" width="128px" title="vivienne westwood earrings id love to buy for a special somebody" src="img/earrings.jpeg" onclick="displayModal(this)"/><br/>
+                    there is a very pretty chinese girl on my floor in morrill. she is tall and elegant looking. like a swan. has a nice face and applies makeup very nicely. maybe they'd suit her?<br/>
+                    <br/>
+                    classes start tomorrow but i already have an exam lined up!! i am gonna study really hard today and tomorrow and hopefully dress well too. catch some pretty lady's eyes. i have laundry
+                    and hair to cut etc etc etc. im so busy :sob:<br/>
+                    <br/>
+                    also i wanna get some more time to play resident evil (REmake) and go to the army/navy store, which opens on the 21st. the last time i went it was closed.<br/>
+                    <br/>
+                    i wonder how that girl ashley pak is doing... i ALSO think she is really pretty and cool but she's a year younger than me and idk which school she goes to now. i wish i had
+                    become friends with her.<br/>
+                    <br/>
+                    but it's time for work.<br/>
+                    <br/>
+                    - ak
+                    <div class="center" style="margin-top: 16px;">
+                        <span class="collapse-button" onclick="collapseContent(this.parentElement.parentElement)">▴▴▴ click here 2 collapse ▴▴▴</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contentbox">
+                <div class="contentheader">
+                    first few days of the midwest in pictures
+                    <span class="right-align">aug 17</span>
+                </div>
+                <div class="image-gallery" height="360px">
+                    <img src="img/53buick.jpeg" title="'53 buick" onclick="displayModal(this)"/>
+                    <img src="img/my closet.jpeg" title="my closet" onclick="displayModal(this)"/>
+                    <img src="img/calf.jpeg" title="sweet walmart calf" onclick="displayModal(this)"/>
+                    <img src="img/olentangy sunset.jpeg" title="olentangy sunset" onclick="displayModal(this)"/>
+                    <img src="img/cousins closed.jpeg" title="army navy store closed" onclick="displayModal(this)"/>
+                </div>
+            </div>
+            <div class="contentbox">
+                <div class="contentheader">
+                    the night before i left for college (vlog)
+                    <span class="right-align">aug 13</span>
+                </div>
+                <div class="center">
+                    <div class="resizer">
+                        <iframe class="resized" width="640" height="360" src="https://www.youtube.com/embed/-Rp__3Uacok?si=SNfTtIiyez8XRI_e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="modal-container" onclick="document.getElementById('modal').style.display = 'none'">
+            <div id="modal-content">
+                <img id="modal-img" class="modal-img"/>
+                <div id="modal-caption"></div>
+            </div>
+        </div>
+        <script>
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+
+            function displayModal(img) {
+                document.getElementById("modal-img").src = img.src;
+                document.getElementById("modal-caption").innerText = '"' + img.title + '"';
+
+                document.getElementById("modal").style.display = "block";
+            }
+
+            function expandContent(div) {
+                div.className = "expanded-content";
+                div.setAttribute("onclick", "");
+            }
+
+            async function collapseContent(boss) {  
+                boss.className = "expandable-content";
+                
+                await sleep(250);
+
+                boss.addEventListener("click", function() {
+                    expandContent(this);
+                }, {once : true});
+            }
+        </script>
+        <div id="footer">
+            end of the line (aug. 2024)
+        </div>
+    </body>
+</html>
