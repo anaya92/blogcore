@@ -32,12 +32,14 @@
                     <div class="center">
                         <img class="image-single image-blowupable" title="a screenshot from a cool horror game i found: forbidden siren" src="img/sirens stare.png" onclick="displayModal(this)"/>
                     </div>  
-                    but it's not like i have a somebody in virginia, but i want a girlfriend again. i don't think i'm over the last one at all, but still. it would be nice to have a friend to tell me
+                    it's not like i have a somebody to love me in virginia, i just want a girlfriend again. i don't think i'm over the last one at all, but still. it would be nice to have a friend to tell me
                     what to do and what to wear and to dress up and go out with. also i like being in the presence of a pretty woman.
                     it makes me very happy.<br/>
                     <br/>
-                    i want somebody to buy vivienne westwood for<br/>
-                    <img class="image-single image-blowupable" width="128px" title="vivienne westwood earrings id love to buy for a special somebody" src="img/earrings.jpeg" onclick="displayModal(this)"/><br/>
+                    <div class="center">
+                        i want somebody to buy vivienne westwood for<br/>
+                        <img class="image-single image-blowupable" width="128px" title="vivienne westwood earrings id love to buy for a special somebody" src="img/earrings.jpeg" onclick="displayModal(this)"/><br/>
+                    </div>
                     there is a very pretty chinese girl on my floor in morrill. she is tall and elegant looking. like a swan. has a nice face and applies makeup very nicely. maybe they'd suit her?<br/>
                     <br/>
                     classes start tomorrow but i already have an exam lined up!! i am gonna study really hard today and tomorrow and hopefully dress well too. catch some pretty lady's eyes. i have laundry
@@ -76,7 +78,7 @@
                 </div>
                 <div class="center">
                     <div class="resizer">
-                        <iframe class="resized" width="640" height="360" src="https://www.youtube.com/embed/-Rp__3Uacok?si=SNfTtIiyez8XRI_e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="resized" width="640" height="360" src="https://www.youtube.com/embed/JlmBoFd7_q8?si=vnc8Bjwy24bnoyzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -84,14 +86,16 @@
         <div id="modal" class="modal-container" onclick="document.getElementById('modal').style.display = 'none'">
             <div id="modal-content">
                 <img id="modal-img" class="modal-img"/>
-                <div id="modal-caption"></div>
+                <div>
+                    <mark id="modal-caption">
+                    </mark>
+                </div>
             </div>
         </div>
         <script>
             function sleep(ms) {
                 return new Promise(resolve => setTimeout(resolve, ms));
             }
-
 
             function displayModal(img) {
                 document.getElementById("modal-img").src = img.src;

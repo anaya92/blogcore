@@ -178,6 +178,8 @@ a:hover {
 
 #modal-caption {
     color: red;
+    background-color: black;
+    padding: 4px;
 }
 
 #modal {
