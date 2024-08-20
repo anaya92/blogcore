@@ -31,6 +31,12 @@ html {
     margin-bottom: 10px;
 }
 
+.contentheader-title {
+    max-width: 85%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .image-gallery {
     overflow: auto;
     white-space: nowrap;
