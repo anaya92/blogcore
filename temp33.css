@@ -25,16 +25,25 @@ html {
     margin-bottom: 32px
 }
 
+.contentbox a {
+    color: purple;
+}
+
 .contentheader {
     font-size: 18px;
     border-bottom: 1px solid black;
     margin-bottom: 10px;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
 .contentheader-title {
-    max-width: 85%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    max-width: 50%;
+}
+
+.contentheader-date {
+    margin-left: 48px;
 }
 
 .image-gallery {
@@ -171,8 +180,6 @@ a:hover {
 }
 
 .modal-container img {
-    height: 100%;
-
     max-height: 60vh;
     max-width: 95vw;
     cursor: zoom-out;
