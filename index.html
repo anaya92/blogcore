@@ -14,11 +14,48 @@
                     index ▾
                 </div>
                 <div class="dropdown-content">
-                    <a>empty for now...</a>
+                    <a href="graveyard.html">graveyard</a>
                 </div>
             </div>
         </div>
         <div class="content-container">
+            <div class="contentbox">
+                <div class="contentheader">
+                    <span class="contentheader-title">
+                        loserhood
+                    </span>
+                    <span class="right-align">
+                        aug 22
+                    </span>
+                </div>
+                <div class="expandable-content" onclick="expandContent(this)">
+                    i believe that some people are just born to lose. i think i am too. my dad always used to joke that i was born a crybaby and stuff like that --
+                    not that i think he meant it seriously, but i think it just is true. that somehow i am destined to fall last, naturally. be unlucky, make all the
+                    wrong choices. i think of people i've hurt with my actions.<br/>
+                    <br/>
+                    i think mr booz is a good example of that. i dislike him and find him ugly even to mention in my writings but i cannot help but to think we are somehow the same in
+                     spite of our rivalry. it's just one of those god's irony things. that's why i empathize with him. he is a dying man and i see myself in him.<br/>
+                    <br/>
+                    college makes me feel like shit. i don't like it here. it's not like i would be any better off in virginia. i'm equally purposeless here nor there. i think i've been
+                    so used to some bullshit going on in my life constantly i don't have a concept of self-fulfilling happiness when there isn't some (usually woman-related) calamity just
+                    around the corner.<br/>
+                    <br/>
+                    it's only been a couple days of classes and i'm bored out of my mind. i can't focus in these stupid ass lecture halls with 150 people in them. for the time being ALL my
+                    classes are more or less review of stuff i did in high school or stuff i already know like introductory C++.<br/>
+                    <br/>
+                    hopefully there's gonna be something to do on the weekend. sm busywork. life seems so boring and monotonous.<br/>
+                    <br/>
+                    equally related to loserhood is ugliness. i don't feel good about the way i look. i feel like i'm third class in everything. at least i'm myself, right?<br/>
+                    <br/>
+                    i need be more creative. i need to work out more. i need to work more w/ godot like i wanted to. i need to blog consistently. i need to edit my video.<br/>
+                    <br/>
+                    and damn i need a cigarette.<br/>
+                    <img class="image-single image-blowupable" width="128px" title="cool cigs i want; killer n korean ;)" src="img/vistas.jpg" onclick="displayModal(this)"/><br/>
+                    <div class="center" style="margin-top: 16px;">
+                        <span class="collapse-button" onclick="collapseContent(this.parentElement.parentElement)">▴▴▴ click here 2 collapse ▴▴▴</span>
+                    </div>
+                </div>
+            </div>
             <div class="contentbox">
                 <div class="contentheader">
                     <span class="contentheader-title">
@@ -40,7 +77,7 @@
                     <br/>
                     <div class="center">
                         i want somebody to buy vivienne westwood for<br/>
-                        <img class="image-single image-blowupable" width="128px" title="vivienne westwood earrings id love to buy for a special somebody" src="img/earrings.jpeg" onclick="displayModal(this)"/><br/>
+                        <img class="image-single image-blowupable" width="256px" title="vivienne westwood earrings id love to buy for a special somebody" src="img/earrings.jpeg" onclick="displayModal(this)"/><br/>
                     </div>
                     there is a very pretty chinese girl on my floor in morrill. she is tall and elegant looking. like a swan. has a nice face and applies makeup very nicely. maybe they'd suit her?<br/>
                     <br/>
@@ -53,8 +90,6 @@
                     become friends with her.<br/>
                     <br/>
                     but it's time for work.<br/>
-                    <br/>
-                    - ak
                     <div class="center" style="margin-top: 16px;">
                         <span class="collapse-button" onclick="collapseContent(this.parentElement.parentElement)">▴▴▴ click here 2 collapse ▴▴▴</span>
                     </div>
@@ -98,33 +133,7 @@
                 </div>
             </div>
         </div>
-        <script>
-            function sleep(ms) {
-                return new Promise(resolve => setTimeout(resolve, ms));
-            }
-
-            function displayModal(img) {
-                document.getElementById("modal-img").src = img.src;
-                document.getElementById("modal-caption").innerText = '"' + img.title + '"';
-
-                document.getElementById("modal").style.display = "block";
-            }
-
-            function expandContent(div) {
-                div.className = "expanded-content";
-                div.setAttribute("onclick", "");
-            }
-
-            async function collapseContent(boss) {  
-                boss.className = "expandable-content";
-                
-                await sleep(250);
-
-                boss.addEventListener("click", function() {
-                    expandContent(this);
-                }, {once : true});
-            }
-        </script>
+        <script src="js/utils.js"></script>
         <div id="footer">
             end of the line (aug. 2024)
         </div>
