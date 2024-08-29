@@ -1,0 +1,16 @@
+.landing-main {
+    width: 90%;
+    max-width: 720px;
+    margin: auto;
+
+    overflow-x: hidden;
+}
+
+.banner {
+    user-select: none;
+}
+
+#banner-img {
+    width: 100%;
+    height: 100%;
+}

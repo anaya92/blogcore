@@ -1,5 +1,16 @@
+@font-face {
+    font-family: "SimSun";
+    src: url("font/SimSun.ttf");
+}
+
+@font-face {
+    font-family: "MatisseEB";
+    src: url("font/MatisseClassic.ttf");
+}
+
 html {
     background-color: white;
+    font-family: "SimSun";
 }
 
 .header {
